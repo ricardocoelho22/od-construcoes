@@ -111,32 +111,6 @@ html {
 .stagger > .reveal:nth-child(5) { transition-delay: 400ms; }
 .stagger > .reveal:nth-child(6) { transition-delay: 500ms; }
 
-/* Europe map */
-.map-country-bg {
-  fill: var(--color-navy-800);
-  stroke: var(--color-navy-600);
-  stroke-width: 0.5;
-}
-
-.map-country-highlight {
-  fill: var(--color-amber-400);
-  stroke: var(--color-amber-500);
-  stroke-width: 0.8;
-  animation: map-glow 3s ease-in-out infinite;
-}
-
-@keyframes map-glow {
-  0%, 100% { filter: drop-shadow(0 0 6px rgba(251, 191, 36, 0.35)); }
-  50%       { filter: drop-shadow(0 0 14px rgba(251, 191, 36, 0.65)); }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .map-country-highlight {
-    animation: none;
-    filter: drop-shadow(0 0 8px rgba(251, 191, 36, 0.4));
-  }
-}
-
 /* Diagonal accent stripe */
 .accent-stripe {
   background: repeating-linear-gradient(

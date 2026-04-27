@@ -28,12 +28,6 @@
       { "valor": "4+", "texto": "Países na Europa" },
       { "valor": "40+", "texto": "Projetos em Portfólio" },
       { "valor": "100%", "texto": "Compromisso com Qualidade" }
-    ],
-    "paises": [
-      { "nome": "Roménia", "bandeira": "🇷🇴" },
-      { "nome": "França", "bandeira": "🇫🇷" },
-      { "nome": "Alemanha", "bandeira": "🇩🇪" },
-      { "nome": "Portugal", "bandeira": "🇵🇹" }
     ]
   },
   "servicos": {

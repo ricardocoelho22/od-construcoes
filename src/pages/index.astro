@@ -1,0 +1,54 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Hero from "../components/Hero.astro";
+import SobreNos from "../components/SobreNos.astro";
+import Servicos from "../components/Servicos.astro";
+import Trabalhos from "../components/Trabalhos.astro";
+import Certificacoes from "../components/Certificacoes.astro";
+import Contacto from "../components/Contacto.astro";
+import Footer from "../components/Footer.astro";
+import content from "../data/content.json";
+---
+
+<Layout>
+  <Navbar
+    nome={content.empresa.nome}
+    facebook={content.redes_sociais.facebook}
+  />
+  <Hero
+    titulo={content.hero.titulo}
+    subtitulo={content.hero.subtitulo}
+    cta={content.hero.cta_texto}
+  />
+  <SobreNos
+    titulo={content.sobre.titulo}
+    paragrafos={content.sobre.paragrafos}
+    destaques={content.sobre.destaques}
+    paises={content.sobre.paises}
+  />
+  <Servicos
+    titulo={content.servicos.titulo}
+    subtitulo={content.servicos.subtitulo}
+    lista={content.servicos.lista}
+  />
+  <Trabalhos
+    titulo={content.trabalhos.titulo}
+    subtitulo={content.trabalhos.subtitulo}
+    lista={content.trabalhos.lista}
+  />
+  <Certificacoes
+    titulo={content.certificacoes.titulo}
+    subtitulo={content.certificacoes.subtitulo}
+    lista={content.certificacoes.lista}
+  />
+  <Contacto
+    titulo="Contacto"
+    contacto={content.contacto}
+    facebook={content.redes_sociais.facebook}
+  />
+  <Footer
+    copyright={content.footer.copyright}
+    facebook={content.redes_sociais.facebook}
+  />
+</Layout>

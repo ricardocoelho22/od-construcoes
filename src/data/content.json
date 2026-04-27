@@ -1,0 +1,142 @@
+{
+  "empresa": {
+    "nome": "OD. Construções",
+    "slogan": "A Construir O Seu Sonho",
+    "descricao_curta": "Empresa na área de remodelações gerais, aplicação de capoto, isolamentos e impermeabilizações em Seixal e Margem Sul"
+  },
+  "contacto": {
+    "telefone": "+351 969 486 646",
+    "email": "ovidiudraghis@yahoo.com",
+    "morada": "Seixal, Portugal"
+  },
+  "redes_sociais": {
+    "facebook": "https://www.facebook.com/A.construir.O.Seu.Sonho"
+  },
+  "hero": {
+    "titulo": "OD. Construções",
+    "subtitulo": "Empresa na área de remodelações gerais em Seixal e Margem Sul. Orçamento grátis.",
+    "cta_texto": "Orçamento Grátis"
+  },
+  "sobre": {
+    "titulo": "Sobre Nós",
+    "paragrafos": [
+      "A OD. Construções é uma empresa familiar com experiência construída ao longo de anos de trabalho por toda a Europa. Antes de nos estabelecermos em Portugal, desenvolvemos projetos na Roménia, França e Alemanha, acumulando conhecimento e técnicas de construção de diferentes mercados europeus.",
+      "Hoje, sediados em Seixal, trazemos essa experiência internacional para cada obra que realizamos. Especializamo-nos em remodelações gerais, aplicação de capoto (ETICS), isolamentos térmicos e impermeabilizações, servindo toda a Margem Sul e a região de Lisboa.",
+      "Cada projeto é tratado com a dedicação e o rigor que aprendemos nos mais exigentes mercados europeus. Acompanhamos os nossos clientes desde o primeiro orçamento até à entrega final, garantindo qualidade e transparência em cada etapa da obra."
+    ],
+    "destaques": [
+      { "valor": "4+", "texto": "Países na Europa" },
+      { "valor": "40+", "texto": "Projetos em Portfólio" },
+      { "valor": "100%", "texto": "Compromisso com Qualidade" }
+    ],
+    "paises": [
+      { "nome": "Roménia", "bandeira": "🇷🇴" },
+      { "nome": "França", "bandeira": "🇫🇷" },
+      { "nome": "Alemanha", "bandeira": "🇩🇪" },
+      { "nome": "Portugal", "bandeira": "🇵🇹" }
+    ]
+  },
+  "servicos": {
+    "titulo": "Os Nossos Serviços",
+    "subtitulo": "Soluções completas de remodelação e isolamento para a sua casa ou negócio",
+    "lista": [
+      {
+        "nome": "Remodelações Gerais",
+        "descricao": "Remodelação completa de interiores e exteriores, incluindo sotãos, cozinhas, casas de banho e espaços comerciais.",
+        "icone": "paintbrush"
+      },
+      {
+        "nome": "Aplicação de Capoto (ETICS)",
+        "descricao": "Sistema de isolamento térmico pelo exterior, melhorando o conforto e a eficiência energética do seu edifício.",
+        "icone": "building"
+      },
+      {
+        "nome": "Isolamentos",
+        "descricao": "Isolamento térmico e acústico de paredes, tetos e pavimentos para maior conforto e poupança energética.",
+        "icone": "shield"
+      },
+      {
+        "nome": "Impermeabilizações",
+        "descricao": "Soluções de impermeabilização para terraços, varandas, coberturas e paredes, prevenindo infiltrações e humidade.",
+        "icone": "wrench"
+      },
+      {
+        "nome": "Telhados e Coberturas",
+        "descricao": "Instalação e reparação de telhados, incluindo painel sanduíche, telha e coberturas para proteção total.",
+        "icone": "roof"
+      },
+      {
+        "nome": "Pinturas e Acabamentos",
+        "descricao": "Pintura interior e exterior, revestimentos, pavimentos e todos os acabamentos para um resultado impecável.",
+        "icone": "sparkle"
+      }
+    ]
+  },
+  "trabalhos": {
+    "titulo": "Os Nossos Trabalhos",
+    "subtitulo": "Conheça alguns dos nossos projetos mais recentes",
+    "lista": [
+      {
+        "titulo": "Remodelação Total de Sotão",
+        "descricao": "Remodelação completa",
+        "pasta": "projeto-1",
+        "imagens": 4
+      },
+      {
+        "titulo": "Telhado com Painel Sanduíche",
+        "descricao": "Telhados e coberturas",
+        "pasta": "projeto-2",
+        "imagens": 4
+      },
+      {
+        "titulo": "Aplicação de Capoto em Seixal",
+        "descricao": "Isolamento exterior ETICS",
+        "pasta": "projeto-3",
+        "imagens": 4
+      },
+      {
+        "titulo": "Remodelação de Apartamento em Almada",
+        "descricao": "Remodelação completa",
+        "pasta": "projeto-4",
+        "imagens": 1
+      },
+      {
+        "titulo": "Impermeabilização de Terraço no Barreiro",
+        "descricao": "Impermeabilização",
+        "pasta": "projeto-5",
+        "imagens": 1
+      },
+      {
+        "titulo": "Remodelação de Moradia em Setúbal",
+        "descricao": "Remodelação geral",
+        "pasta": "projeto-6",
+        "imagens": 1
+      }
+    ]
+  },
+  "certificacoes": {
+    "titulo": "Certificações e Qualificações",
+    "subtitulo": "Garantia de profissionalismo e conformidade legal",
+    "lista": [
+      {
+        "nome": "Alvará de Construção",
+        "descricao": "Alvará de construção válido emitido pelo IMPIC, habilitando a execução de obras de construção civil."
+      },
+      {
+        "nome": "Seguro de Responsabilidade Civil",
+        "descricao": "Seguro de responsabilidade civil profissional que garante proteção total em todas as nossas obras."
+      },
+      {
+        "nome": "Segurança no Trabalho",
+        "descricao": "Cumprimento integral das normas de segurança, higiene e saúde no trabalho em todos os estaleiros."
+      },
+      {
+        "nome": "Formação Contínua",
+        "descricao": "Equipa com formação profissional contínua e atualizada nas mais recentes técnicas de construção."
+      }
+    ]
+  },
+  "footer": {
+    "copyright": "© 2026 OD. Construções. Todos os direitos reservados."
+  }
+}

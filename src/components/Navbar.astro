@@ -1,0 +1,120 @@
+---
+interface Props {
+  nome: string;
+  facebook: string;
+}
+
+const { nome, facebook } = Astro.props;
+
+const links = [
+  { href: "#sobre", label: "Sobre Nós" },
+  { href: "#servicos", label: "Serviços" },
+  { href: "#trabalhos", label: "Trabalhos" },
+  { href: "#certificacoes", label: "Certificações" },
+  { href: "#contacto", label: "Contacto" },
+];
+---
+
+<nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500 bg-transparent">
+  <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
+    <div class="flex items-center justify-between h-20">
+      <!-- Logo -->
+      <a href="#" class="font-display text-2xl text-white tracking-tight group">
+        <span class="text-amber-400 group-hover:text-amber-300 transition-colors">OD.</span>
+        <span class="hidden sm:inline"> Construções</span>
+      </a>
+
+      <!-- Desktop Links -->
+      <div class="hidden lg:flex items-center gap-10">
+        {links.map((link) => (
+          <a
+            href={link.href}
+            class="text-white/70 hover:text-amber-400 transition-colors text-sm tracking-wide uppercase font-medium"
+          >
+            {link.label}
+          </a>
+        ))}
+        <span class="w-px h-5 bg-white/20"></span>
+        <a
+          href={facebook}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-white/70 hover:text-amber-400 transition-colors"
+          aria-label="Facebook"
+        >
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+          </svg>
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger -->
+      <button
+        id="mobile-menu-btn"
+        class="lg:hidden text-white p-2 hover:text-amber-400 transition-colors"
+        aria-label="Menu"
+      >
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden lg:hidden bg-navy-950/98 backdrop-blur-md border-t border-white/5">
+    <div class="px-6 py-6 space-y-1">
+      {links.map((link) => (
+        <a
+          href={link.href}
+          class="mobile-link block text-white/70 hover:text-amber-400 hover:pl-4 transition-all text-sm tracking-wide uppercase font-medium py-3 border-b border-white/5"
+        >
+          {link.label}
+        </a>
+      ))}
+      <a
+        href={facebook}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="flex items-center gap-3 text-white/70 hover:text-amber-400 transition-colors text-sm tracking-wide uppercase font-medium py-3"
+      >
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+        </svg>
+        Facebook
+      </a>
+    </div>
+  </div>
+</nav>
+
+<script>
+  const btn = document.getElementById("mobile-menu-btn");
+  const menu = document.getElementById("mobile-menu");
+  const navbar = document.getElementById("navbar");
+  const mobileLinks = document.querySelectorAll(".mobile-link");
+
+  // Hamburger toggle
+  btn?.addEventListener("click", () => {
+    menu?.classList.toggle("hidden");
+  });
+
+  mobileLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      menu?.classList.add("hidden");
+    });
+  });
+
+  // Navbar background on scroll
+  const handleScroll = () => {
+    if (window.scrollY > 80) {
+      navbar?.classList.add("bg-navy-950/95", "backdrop-blur-md", "shadow-lg");
+      navbar?.classList.remove("bg-transparent");
+    } else {
+      navbar?.classList.remove("bg-navy-950/95", "backdrop-blur-md", "shadow-lg");
+      navbar?.classList.add("bg-transparent");
+    }
+  };
+
+  window.addEventListener("scroll", handleScroll, { passive: true });
+  handleScroll();
+</script>

@@ -1,0 +1,114 @@
+---
+interface Props {
+  titulo: string;
+  paragrafos: string[];
+  destaques: { valor: string; texto: string }[];
+  paises: { nome: string; bandeira: string }[];
+}
+
+const { titulo, paragrafos, destaques, paises } = Astro.props;
+const base = import.meta.env.BASE_URL;
+
+// SVG flag data — clean rectangular flags
+const flags: Record<string, string> = {
+  "🇷🇴": `<rect width="40" height="30" fill="#002B7F"/><rect x="13.3" width="13.3" height="30" fill="#FCD116"/><rect x="26.6" width="13.4" height="30" fill="#CE1126"/>`,
+  "🇫🇷": `<rect width="40" height="30" fill="#002395"/><rect x="13.3" width="13.3" height="30" fill="#fff"/><rect x="26.6" width="13.4" height="30" fill="#ED2939"/>`,
+  "🇩🇪": `<rect width="40" height="10" fill="#000"/><rect y="10" width="40" height="10" fill="#DD0000"/><rect y="20" width="40" height="10" fill="#FFCC00"/>`,
+  "🇵🇹": `<rect width="40" height="30" fill="#006600"/><rect x="16" width="24" height="30" fill="#FF0000"/><circle cx="16" cy="15" r="5" fill="#FFCC00"/>`,
+};
+---
+
+<section id="sobre" class="relative bg-stone-50 overflow-hidden">
+  <!-- About content -->
+  <div class="relative py-24 md:py-32">
+    <div class="absolute inset-0 accent-stripe opacity-50"></div>
+
+    <div class="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
+      <!-- Section label -->
+      <div class="reveal mb-16">
+        <p class="text-amber-600 text-sm tracking-[0.3em] uppercase font-medium mb-4">Quem Somos</p>
+        <h2 class="font-display text-4xl md:text-5xl lg:text-6xl text-navy-900 leading-tight">
+          {titulo}
+        </h2>
+        <span class="block w-20 h-1 bg-amber-500 mt-6"></span>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
+        <!-- Text — takes 7 columns -->
+        <div class="lg:col-span-7 space-y-6">
+          {paragrafos.map((p, i) => (
+            <p class="reveal text-navy-600 text-lg leading-relaxed" style={`transition-delay: ${i * 100}ms`}>
+              {p}
+            </p>
+          ))}
+        </div>
+
+        <!-- Image — takes 5 columns -->
+        <div class="lg:col-span-5 reveal" style="transition-delay: 200ms">
+          <div class="relative">
+            <div class="absolute -top-4 -right-4 w-full h-full border-2 border-amber-500/30 hidden lg:block"></div>
+            <img
+              src={`${base}images/about.jpg`}
+              alt="Equipa OD. Construções"
+              class="relative w-full object-cover aspect-[4/3] grayscale-[30%] hover:grayscale-0 transition-all duration-700"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- European journey strip -->
+  <div class="relative bg-navy-950 grain overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-r from-amber-500/5 via-transparent to-amber-500/5"></div>
+
+    <div class="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 py-16 md:py-20">
+      <div class="reveal">
+        <p class="text-amber-400 text-sm tracking-[0.3em] uppercase font-medium mb-8 text-center">Experiência Internacional</p>
+        <h3 class="font-display text-3xl md:text-4xl text-white text-center mb-16 max-w-2xl mx-auto leading-snug">
+          Experiência construída por toda a <span class="text-amber-400">Europa</span>
+        </h3>
+
+        <!-- Journey path -->
+        <div class="relative flex flex-col md:flex-row items-center justify-center gap-8 md:gap-0">
+          {paises.map((p, i) => (
+            <>
+              {/* Country node */}
+              <div class="group relative flex flex-col items-center md:px-8 lg:px-12">
+                {/* SVG flag */}
+                <div class="w-16 h-12 md:w-20 md:h-[60px] lg:w-24 lg:h-[72px] rounded shadow-lg shadow-black/30 overflow-hidden border border-white/10 group-hover:scale-105 group-hover:shadow-amber-500/20 transition-all duration-300">
+                  <svg viewBox="0 0 40 30" class="w-full h-full" set:html={flags[p.bandeira]} />
+                </div>
+                <span class="text-white font-bold text-sm md:text-base tracking-wide mt-4">{p.nome}</span>
+              </div>
+              {/* Separator dot */}
+              {i < paises.length - 1 && (
+                <div class="flex items-center shrink-0">
+                  <div class="w-1.5 h-1.5 rounded-full bg-amber-500/40 hidden md:block mx-2 lg:mx-4"></div>
+                  <div class="w-px h-6 bg-amber-500/20 md:hidden"></div>
+                </div>
+              )}
+            </>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stats banner -->
+  <div class="relative bg-navy-900">
+    <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
+      <div class="reveal grid grid-cols-1 sm:grid-cols-2 divide-y sm:divide-y-0 sm:divide-x divide-white/10">
+        {destaques.filter((_, i) => i > 0).map((d) => (
+          <div class="py-10 md:py-12 sm:first:pl-0 sm:pl-12 sm:last:pr-0 sm:pr-12">
+            <div class="flex items-baseline gap-4">
+              <span class="font-display text-5xl md:text-6xl text-amber-400 leading-none">{d.valor}</span>
+              <span class="text-navy-300 text-sm uppercase tracking-[0.2em] font-medium">{d.texto}</span>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>

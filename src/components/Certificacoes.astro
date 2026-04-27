@@ -1,0 +1,43 @@
+---
+interface Props {
+  titulo: string;
+  subtitulo: string;
+  lista: { nome: string; descricao: string }[];
+}
+
+const { titulo, subtitulo, lista } = Astro.props;
+---
+
+<section id="certificacoes" class="relative py-24 md:py-32 bg-white overflow-hidden">
+  <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
+    <div class="reveal text-center mb-16 max-w-2xl mx-auto">
+      <p class="text-amber-600 text-sm tracking-[0.3em] uppercase font-medium mb-4">Credenciais</p>
+      <h2 class="font-display text-4xl md:text-5xl text-navy-900 leading-tight mb-6">
+        {titulo}
+      </h2>
+      <p class="text-navy-500 text-lg">{subtitulo}</p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 stagger">
+      {lista.map((c, i) => (
+        <div class="reveal group relative bg-stone-50 border border-stone-200 p-8 hover:border-amber-500/40 hover:bg-amber-50/30 transition-all duration-500">
+          <!-- Number indicator -->
+          <span class="font-display text-6xl text-navy-100 group-hover:text-amber-200 transition-colors duration-500 absolute -top-2 right-4 leading-none">
+            {String(i + 1).padStart(2, '0')}
+          </span>
+
+          <div class="relative">
+            <div class="w-12 h-12 mb-6 text-amber-500">
+              <svg class="w-full h-full" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z" />
+              </svg>
+            </div>
+
+            <h3 class="font-bold text-navy-900 mb-3 text-lg">{c.nome}</h3>
+            <p class="text-sm text-navy-600 leading-relaxed">{c.descricao}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

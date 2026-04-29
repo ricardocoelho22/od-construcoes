@@ -61,9 +61,9 @@ const telLink = contacto.telefone.replace(/\s/g, "");
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
             </svg>
           </div>
-          <div>
+          <div class="min-w-0">
             <p class="text-faint text-xs tracking-[0.2em] uppercase font-medium mb-1">Email</p>
-            <p class="text-xl md:text-2xl font-display text-white group-hover:text-accent-soft transition-colors break-all">
+            <p class="text-base sm:text-lg md:text-2xl font-display text-white group-hover:text-accent-soft transition-colors break-words">
               {contacto.email}
             </p>
           </div>

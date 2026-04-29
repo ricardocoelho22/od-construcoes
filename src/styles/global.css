@@ -4,31 +4,59 @@
   --font-sans: "DM Sans", system-ui, sans-serif;
   --font-display: "DM Serif Display", Georgia, serif;
 
-  --color-navy-50: #f0f4f8;
-  --color-navy-100: #d9e2ec;
-  --color-navy-200: #bcccdc;
-  --color-navy-300: #9fb3c8;
-  --color-navy-400: #829ab1;
-  --color-navy-500: #627d98;
-  --color-navy-600: #486581;
-  --color-navy-700: #334e68;
-  --color-navy-800: #243b53;
-  --color-navy-900: #102a43;
-  --color-navy-950: #0a1929;
+  /* ─── Primitives: Warm Charcoal ─────────────────────── */
+  --color-navy-50:  #f5f1ec;
+  --color-navy-100: #e8e0d6;
+  --color-navy-200: #c9c0b6;
+  --color-navy-300: #a89e92;
+  --color-navy-400: #837a6f;
+  --color-navy-500: #6b6259;
+  --color-navy-600: #524a43;
+  --color-navy-700: #3a342f;
+  --color-navy-800: #2a2522;
+  --color-navy-900: #1f1b18;
+  --color-navy-950: #14110f;
 
-  --color-amber-50: #fffbeb;
-  --color-amber-100: #fef3c7;
-  --color-amber-200: #fde68a;
-  --color-amber-300: #fcd34d;
-  --color-amber-400: #fbbf24;
-  --color-amber-500: #f59e0b;
-  --color-amber-600: #d97706;
-  --color-amber-700: #b45309;
+  /* ─── Primitives: Terracotta ─────────────────────────── */
+  --color-amber-50:  #fbf3ee;
+  --color-amber-100: #f5e0d2;
+  --color-amber-200: #ecc1a5;
+  --color-amber-300: #e0a07a;
+  --color-amber-400: #d97847;
+  --color-amber-500: #c0532a;
+  --color-amber-600: #9a3f1c;
+  --color-amber-700: #7a3015;
 
-  --color-stone-50: #fafaf9;
-  --color-stone-100: #f5f5f4;
-  --color-stone-200: #e7e5e4;
-  --color-stone-300: #d6d3d1;
+  /* ─── Primitives: Linen ──────────────────────────────── */
+  --color-stone-50:  #faf6f0;
+  --color-stone-100: #f2ebe0;
+  --color-stone-200: #e3d7c4;
+  --color-stone-300: #c9b89c;
+
+  /* ─── Semantic: Surfaces ─────────────────────────────── */
+  --color-surface:                var(--color-stone-50);
+  --color-surface-raised:         #ffffff;
+  --color-surface-inverse:        var(--color-navy-950);
+  --color-surface-inverse-raised: var(--color-navy-900);
+
+  /* ─── Semantic: Text ─────────────────────────────────── */
+  --color-heading:  var(--color-navy-900);
+  --color-body:     var(--color-navy-800);
+  --color-muted:    var(--color-navy-600);
+  --color-subtle:   var(--color-navy-500);
+  --color-faint:    var(--color-navy-400);
+  --color-dim:      var(--color-navy-300);
+  --color-soft:     var(--color-navy-200);
+  --color-pale:     var(--color-navy-100);
+
+  /* ─── Semantic: Accent ───────────────────────────────── */
+  --color-accent:        var(--color-amber-500);
+  --color-accent-soft:   var(--color-amber-400);
+  --color-accent-strong: var(--color-amber-600);
+  --color-accent-faint:  var(--color-amber-50);
+
+  /* ─── Semantic: Borders ──────────────────────────────── */
+  --color-line: var(--color-stone-200);
 
   --animate-fade-up: fade-up 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
   --animate-fade-in: fade-in 0.6s ease both;
@@ -117,7 +145,7 @@ html {
     -45deg,
     transparent,
     transparent 10px,
-    rgba(245, 158, 11, 0.06) 10px,
-    rgba(245, 158, 11, 0.06) 20px
+    rgba(217, 120, 71, 0.06) 10px,
+    rgba(217, 120, 71, 0.06) 20px
   );
 }

@@ -24,35 +24,35 @@ const icons: Record<string, string> = {
 };
 ---
 
-<section id="servicos" class="relative py-24 md:py-32 bg-navy-950 overflow-hidden">
+<section id="servicos" class="relative py-24 md:py-32 bg-surface-inverse overflow-hidden">
   <!-- Grain overlay -->
   <div class="absolute inset-0 grain"></div>
 
   <div class="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
     <div class="reveal mb-16 max-w-2xl">
-      <p class="text-amber-400 text-sm tracking-[0.3em] uppercase font-medium mb-4">O Que Fazemos</p>
+      <p class="text-accent-soft text-sm tracking-[0.3em] uppercase font-medium mb-4">O Que Fazemos</p>
       <h2 class="font-display text-4xl md:text-5xl lg:text-6xl text-white leading-tight mb-6">
         {titulo}
       </h2>
-      <p class="text-navy-300 text-lg">{subtitulo}</p>
+      <p class="text-dim text-lg">{subtitulo}</p>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-white/5 stagger">
       {lista.map((s) => (
-        <div class="reveal group relative bg-navy-950 p-8 md:p-10 hover:bg-navy-900 transition-all duration-500 cursor-default">
+        <div class="reveal group relative bg-surface-inverse p-8 md:p-10 hover:bg-surface-inverse-raised transition-all duration-500 cursor-default">
           <!-- Top accent line that expands on hover -->
-          <div class="absolute top-0 left-0 w-0 h-px bg-amber-500 group-hover:w-full transition-all duration-700"></div>
+          <div class="absolute top-0 left-0 w-0 h-px bg-accent group-hover:w-full transition-all duration-700"></div>
 
-          <div class="w-12 h-12 text-amber-500 mb-6 group-hover:scale-110 transition-transform duration-300">
+          <div class="w-12 h-12 text-accent mb-6 group-hover:scale-110 transition-transform duration-300">
             <svg class="w-full h-full" fill="currentColor" viewBox="0 0 24 24">
               <path d={icons[s.icone] || icons.building} />
             </svg>
           </div>
 
-          <h3 class="text-xl font-bold text-white mb-3 group-hover:text-amber-400 transition-colors duration-300">
+          <h3 class="text-xl font-bold text-white mb-3 group-hover:text-accent-soft transition-colors duration-300">
             {s.nome}
           </h3>
-          <p class="text-navy-300 leading-relaxed">{s.descricao}</p>
+          <p class="text-dim leading-relaxed">{s.descricao}</p>
         </div>
       ))}
     </div>

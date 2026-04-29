@@ -18,30 +18,30 @@ const base = import.meta.env.BASE_URL;
   </div>
 
   <!-- Dark gradient overlay — stronger at bottom for text contrast -->
-  <div class="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/60 to-navy-950/30"></div>
+  <div class="absolute inset-0 bg-gradient-to-t from-surface-inverse via-surface-inverse/60 to-surface-inverse/30"></div>
 
   <!-- Grain texture -->
   <div class="absolute inset-0 grain"></div>
 
-  <!-- Geometric accent — diagonal amber line -->
-  <div class="absolute top-0 right-0 w-1 h-48 bg-amber-500/60 origin-top-right rotate-[20deg] translate-x-24 hidden lg:block"></div>
+  <!-- Geometric accent — diagonal line -->
+  <div class="absolute top-0 right-0 w-1 h-48 bg-accent/60 origin-top-right rotate-[20deg] translate-x-24 hidden lg:block"></div>
 
   <!-- Content -->
   <div class="relative z-10 w-full max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 pb-24 md:pb-32 pt-32">
     <div class="max-w-3xl">
       <!-- Eyebrow -->
-      <p class="text-amber-400 text-sm tracking-[0.3em] uppercase font-medium mb-6 animate-fade-in" style="animation-delay: 0.2s">
+      <p class="text-accent-soft text-sm tracking-[0.3em] uppercase font-medium mb-6 animate-fade-in" style="animation-delay: 0.2s">
         Remodelações &bull; Capoto &bull; Isolamentos &bull; Impermeabilizações
       </p>
 
       <!-- Main heading -->
       <h1 class="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-white mb-8 leading-[0.95] animate-fade-up" style="animation-delay: 0.4s">
         A Construir O Seu
-        <span class="text-amber-400 block mt-2">Sonho</span>
+        <span class="text-accent-soft block mt-2">Sonho</span>
       </h1>
 
       <!-- Subtitle -->
-      <p class="text-lg md:text-xl text-navy-200 max-w-xl mb-12 leading-relaxed animate-fade-up" style="animation-delay: 0.6s">
+      <p class="text-lg md:text-xl text-soft max-w-xl mb-12 leading-relaxed animate-fade-up" style="animation-delay: 0.6s">
         {subtitulo}
       </p>
 
@@ -49,7 +49,7 @@ const base = import.meta.env.BASE_URL;
       <div class="flex flex-wrap gap-4 animate-fade-up" style="animation-delay: 0.8s">
         <a
           href="#contacto"
-          class="group inline-flex items-center gap-3 bg-amber-500 hover:bg-amber-400 text-navy-950 font-bold py-4 px-8 text-base transition-all hover:shadow-lg hover:shadow-amber-500/20"
+          class="group inline-flex items-center gap-3 bg-accent hover:bg-accent-soft text-surface-inverse font-bold py-4 px-8 text-base transition-all hover:shadow-lg hover:shadow-accent/20"
         >
           {cta}
           <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -58,7 +58,7 @@ const base = import.meta.env.BASE_URL;
         </a>
         <a
           href="#trabalhos"
-          class="inline-flex items-center gap-2 border border-white/20 hover:border-amber-400/50 text-white hover:text-amber-400 font-medium py-4 px-8 text-base transition-all"
+          class="inline-flex items-center gap-2 border border-white/20 hover:border-accent-soft/50 text-white hover:text-accent-soft font-medium py-4 px-8 text-base transition-all"
         >
           Ver Trabalhos
         </a>
@@ -68,7 +68,7 @@ const base = import.meta.env.BASE_URL;
     <!-- Scroll indicator -->
     <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce hidden md:block">
       <div class="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center pt-2">
-        <div class="w-1 h-2 bg-amber-400 rounded-full"></div>
+        <div class="w-1 h-2 bg-accent-soft rounded-full"></div>
       </div>
     </div>
   </div>

@@ -9,7 +9,7 @@ const { titulo, paragrafos, destaques } = Astro.props;
 const base = import.meta.env.BASE_URL;
 ---
 
-<section id="sobre" class="relative bg-stone-50 overflow-hidden">
+<section id="sobre" class="relative bg-surface overflow-hidden">
   <!-- About content -->
   <div class="relative py-24 md:py-32">
     <div class="absolute inset-0 accent-stripe opacity-50"></div>
@@ -17,18 +17,18 @@ const base = import.meta.env.BASE_URL;
     <div class="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
       <!-- Section label -->
       <div class="reveal mb-16">
-        <p class="text-amber-600 text-sm tracking-[0.3em] uppercase font-medium mb-4">Quem Somos</p>
-        <h2 class="font-display text-4xl md:text-5xl lg:text-6xl text-navy-900 leading-tight">
+        <p class="text-accent-strong text-sm tracking-[0.3em] uppercase font-medium mb-4">Quem Somos</p>
+        <h2 class="font-display text-4xl md:text-5xl lg:text-6xl text-heading leading-tight">
           {titulo}
         </h2>
-        <span class="block w-20 h-1 bg-amber-500 mt-6"></span>
+        <span class="block w-20 h-1 bg-accent mt-6"></span>
       </div>
 
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
         <!-- Text — takes 7 columns -->
         <div class="lg:col-span-7 space-y-6">
           {paragrafos.map((p, i) => (
-            <p class="reveal text-navy-600 text-lg leading-relaxed" style={`transition-delay: ${i * 100}ms`}>
+            <p class="reveal text-muted text-lg leading-relaxed" style={`transition-delay: ${i * 100}ms`}>
               {p}
             </p>
           ))}
@@ -37,7 +37,7 @@ const base = import.meta.env.BASE_URL;
         <!-- Image — takes 5 columns -->
         <div class="lg:col-span-5 reveal" style="transition-delay: 200ms">
           <div class="relative">
-            <div class="absolute -top-4 -right-4 w-full h-full border-2 border-amber-500/30 hidden lg:block"></div>
+            <div class="absolute -top-4 -right-4 w-full h-full border-2 border-accent/30 hidden lg:block"></div>
             <img
               src={`${base}images/about.jpg`}
               alt="Equipa OD. Construções"
@@ -51,14 +51,14 @@ const base = import.meta.env.BASE_URL;
   </div>
 
   <!-- European map strip -->
-  <div class="relative bg-navy-950 grain overflow-hidden">
-    <div class="absolute inset-0 bg-gradient-to-r from-amber-500/5 via-transparent to-amber-500/5"></div>
+  <div class="relative bg-surface-inverse grain overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-r from-accent/5 via-transparent to-accent/5"></div>
 
     <div class="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 py-16 md:py-20">
       <div class="reveal">
-        <p class="text-amber-400 text-sm tracking-[0.3em] uppercase font-medium mb-8 text-center">Experiência Internacional</p>
+        <p class="text-accent-soft text-sm tracking-[0.3em] uppercase font-medium mb-8 text-center">Experiência Internacional</p>
         <h3 class="font-display text-3xl md:text-4xl text-white text-center mb-12 max-w-2xl mx-auto leading-snug">
-          Experiência construída por toda a <span class="text-amber-400">Europa</span>
+          Experiência construída por toda a <span class="text-accent-soft">Europa</span>
         </h3>
 
         <!-- Europe map -->
@@ -75,14 +75,14 @@ const base = import.meta.env.BASE_URL;
   </div>
 
   <!-- Stats banner -->
-  <div class="relative bg-navy-900">
+  <div class="relative bg-surface-inverse-raised">
     <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
       <div class="reveal grid grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-white/10">
         {destaques.map((d) => (
           <div class="py-10 md:py-12 sm:first:pl-0 sm:pl-12 sm:last:pr-0 sm:pr-12">
-            <div class="flex items-baseline gap-4">
-              <span class="font-display text-5xl md:text-6xl text-amber-400 leading-none">{d.valor}</span>
-              <span class="text-navy-300 text-sm uppercase tracking-[0.2em] font-medium">{d.texto}</span>
+            <div class="flex items-center gap-4">
+              <span class="font-display text-5xl md:text-6xl text-accent-soft leading-none">{d.valor}</span>
+              <span class="text-dim text-sm uppercase tracking-[0.2em] font-medium leading-snug max-w-[12ch]">{d.texto}</span>
             </div>
           </div>
         ))}
@@ -93,12 +93,7 @@ const base = import.meta.env.BASE_URL;
 
 <style>
   .europe-map {
-    filter:
-      brightness(0.85)
-      sepia(1)
-      hue-rotate(-10deg)
-      saturate(1.4)
-      drop-shadow(0 0 24px rgba(245, 158, 11, 0.15));
+    filter: drop-shadow(0 0 24px rgba(217, 120, 71, 0.15));
     opacity: 0.92;
   }
 </style>

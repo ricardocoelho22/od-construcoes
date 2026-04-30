@@ -5,8 +5,14 @@
     "descricao_curta": "Empresa na área de remodelações gerais, aplicação de capoto, isolamentos e impermeabilizações em todo o país e no estrangeiro"
   },
   "contacto": {
-    "telefone": "+351 969 486 646",
-    "email": "ovidiudraghis@yahoo.com",
+    "telefones": [
+      "+351 969 486 646",
+      "+351 960 385 540"
+    ],
+    "emails": [
+      "ovidiudraghis@yahoo.com",
+      "r_draghis@ymail.com"
+    ],
     "morada": "Seixal, Portugal"
   },
   "redes_sociais": {

@@ -2,7 +2,7 @@
   "empresa": {
     "nome": "OD. Construções",
     "slogan": "A Construir O Seu Sonho",
-    "descricao_curta": "Empresa na área de remodelações gerais, aplicação de capoto, isolamentos e impermeabilizações em todo o país e no estrangeiro"
+    "descricao_curta": "Construção e remodelações chave-na-mão — capoto, impermeabilizações, telhados, carpintaria, canalização, eletricidade, pintura e LSF executados pela nossa equipa, em Portugal e no estrangeiro."
   },
   "contacto": {
     "telefones": [
@@ -20,61 +20,61 @@
   },
   "hero": {
     "titulo": "OD. Construções",
-    "subtitulo": "Empresa na área de remodelações gerais em todo o país e no estrangeiro. Orçamento grátis.",
+    "subtitulo": "Construção, remodelações e todas as especialidades — capoto, impermeabilizações, carpintaria, canalização, eletricidade e pintura — executadas pela mesma equipa, para a sua casa, prédio ou condomínio.",
     "cta_texto": "Orçamento Grátis"
   },
   "sobre": {
     "titulo": "Sobre Nós",
     "paragrafos": [
-      "A OD. Construções é uma empresa familiar com experiência construída ao longo de anos de trabalho por toda a Europa. Antes de nos estabelecermos em Portugal, desenvolvemos projetos em vários países europeus, acumulando conhecimento e técnicas de construção de diferentes mercados.",
-      "Hoje, sediados em Seixal, trazemos essa experiência internacional para cada obra que realizamos. Especializamo-nos em remodelações gerais, aplicação de capoto (ETICS), isolamentos térmicos e impermeabilizações, servindo clientes em todo o país e no estrangeiro.",
-      "Cada projeto é tratado com a dedicação e o rigor que aprendemos nos mais exigentes mercados europeus. Acompanhamos os nossos clientes desde o primeiro orçamento até à entrega final, garantindo qualidade e transparência em cada etapa da obra."
+      "A OD. Construções é uma empresa familiar com mais de três décadas de experiência, construída em obras por toda a Europa antes de fixarmos a nossa sede em Portugal. Nesses anos acumulámos técnicas, certificações e know-how dos mercados mais exigentes — e é isso que aplicamos hoje em cada obra, do Seixal a todo o país e ao estrangeiro.",
+      "Somos um construtor generalista completo: fazemos remodelações chave-na-mão, construção tradicional e em Light Steel Frame (LSF), aplicação de capoto (ETICS), isolamentos, impermeabilizações, telhados, carpintaria, canalização, eletricidade e pintura. Tudo executado pela nossa equipa — sem subcontratos descoordenados, sem responsabilidades atiradas a terceiros.",
+      "Trabalhamos sobretudo com clientes particulares, proprietários de prédios e condomínios que querem alguém de confiança a tratar da obra inteira. Acompanhamos cada projeto desde o primeiro orçamento — gratuito e sem compromisso — até à entrega final, com a transparência e o rigor que aprendemos nos mercados europeus."
     ],
     "destaques": [
-      { "valor": "30+", "texto": "Anos de Experiência" },
-      { "valor": "40+", "texto": "Projetos em Portfólio" },
-      { "valor": "100%", "texto": "Compromisso com Qualidade" }
+      { "valor": "30+", "texto": "Anos a Construir" },
+      { "valor": "5+", "texto": "Países na Europa" },
+      { "valor": "100%", "texto": "Equipa Própria" }
     ]
   },
   "servicos": {
     "titulo": "Os Nossos Serviços",
-    "subtitulo": "Soluções completas de remodelação e isolamento para a sua casa ou negócio",
+    "subtitulo": "Tudo o que a sua obra precisa, executado pela mesma equipa — sem subcontratos descoordenados.",
     "lista": [
       {
-        "nome": "Remodelações Gerais",
-        "descricao": "Remodelação completa de interiores e exteriores, incluindo sotãos, cozinhas, casas de banho e espaços comerciais.",
+        "nome": "Remodelações Chave-na-Mão",
+        "descricao": "Remodelação completa de habitações, lojas e espaços comerciais — da demolição aos acabamentos. Cozinhas, casas de banho, sotãos e renovações totais com uma só equipa, do projeto à entrega.",
         "icone": "paintbrush"
       },
       {
-        "nome": "Aplicação de Capoto (ETICS)",
-        "descricao": "Sistema de isolamento térmico pelo exterior, melhorando o conforto e a eficiência energética do seu edifício.",
-        "icone": "building"
-      },
-      {
-        "nome": "Isolamentos",
-        "descricao": "Isolamento térmico e acústico de paredes, tetos e pavimentos para maior conforto e poupança energética.",
+        "nome": "Capoto (ETICS) e Isolamentos",
+        "descricao": "Sistema ETICS de isolamento térmico pelo exterior e isolamento acústico e térmico de paredes, tetos e pavimentos. Mais conforto, menos faturas de energia e fachadas como novas — ideal para condomínios e moradias.",
         "icone": "shield"
       },
       {
         "nome": "Impermeabilizações",
-        "descricao": "Soluções de impermeabilização para terraços, varandas, coberturas e paredes, prevenindo infiltrações e humidade.",
+        "descricao": "Diagnóstico e resolução de infiltrações em terraços, varandas, coberturas e fachadas. Aplicamos as melhores telas, membranas e revestimentos para acabar de vez com humidades.",
         "icone": "wrench"
       },
       {
+        "nome": "Construção Civil & LSF",
+        "descricao": "Obra nova em construção tradicional ou em Light Steel Frame (LSF). Moradias, anexos, ampliações e estruturas modulares — rápidas, eficientes e com qualidade certificada.",
+        "icone": "building"
+      },
+      {
         "nome": "Telhados e Coberturas",
-        "descricao": "Instalação e reparação de telhados, incluindo painel sanduíche, telha e coberturas para proteção total.",
+        "descricao": "Construção e reabilitação de telhados em telha, painel sanduíche e estruturas metálicas. Substituição completa, reparação de fugas, novas coberturas e isolamento.",
         "icone": "roof"
       },
       {
-        "nome": "Pinturas e Acabamentos",
-        "descricao": "Pintura interior e exterior, revestimentos, pavimentos e todos os acabamentos para um resultado impecável.",
+        "nome": "Especialidades Técnicas",
+        "descricao": "Pintura interior e exterior, carpintaria, canalização, redes elétricas e todos os acabamentos — todas as especialidades de obra executadas pela nossa equipa, sem subcontratos descoordenados.",
         "icone": "sparkle"
       }
     ]
   },
   "trabalhos": {
     "titulo": "Os Nossos Trabalhos",
-    "subtitulo": "Conheça alguns dos nossos projetos mais recentes",
+    "subtitulo": "Uma amostra dos nossos projetos — remodelações, capoto, telhados e impermeabilizações executados de ponta a ponta.",
     "lista": [
       {
         "titulo": "Remodelação Total de Sotão",
@@ -116,23 +116,23 @@
   },
   "certificacoes": {
     "titulo": "Certificações e Qualificações",
-    "subtitulo": "Garantia de profissionalismo e conformidade legal",
+    "subtitulo": "Habilitações legais e técnicas para executar qualquer especialidade da sua obra.",
     "lista": [
       {
-        "nome": "Alvará de Construção",
-        "descricao": "Alvará de construção válido emitido pelo IMPIC, habilitando a execução de obras de construção civil."
+        "nome": "Alvará de Construção (IMPIC)",
+        "descricao": "Alvará válido emitido pelo IMPIC, com habilitações para construção civil, remodelações, isolamentos, impermeabilizações e especialidades técnicas associadas."
       },
       {
         "nome": "Seguro de Responsabilidade Civil",
-        "descricao": "Seguro de responsabilidade civil profissional que garante proteção total em todas as nossas obras."
+        "descricao": "Seguro de responsabilidade civil profissional com cobertura total para obras em habitações particulares, prédios e condomínios."
       },
       {
-        "nome": "Segurança no Trabalho",
-        "descricao": "Cumprimento integral das normas de segurança, higiene e saúde no trabalho em todos os estaleiros."
+        "nome": "Segurança e Higiene no Trabalho",
+        "descricao": "Cumprimento integral das normas de SHST em todos os estaleiros — equipamentos, formação e procedimentos atualizados conforme a legislação portuguesa."
       },
       {
-        "nome": "Formação Contínua",
-        "descricao": "Equipa com formação profissional contínua e atualizada nas mais recentes técnicas de construção."
+        "nome": "Equipa Técnica Multidisciplinar",
+        "descricao": "Equipa com formação e certificações em todas as especialidades de obra — aplicação ETICS, isolamentos, eletricidade, canalização, carpintaria e construção em LSF."
       }
     ]
   },

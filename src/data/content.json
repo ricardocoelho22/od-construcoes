@@ -115,24 +115,28 @@
     ]
   },
   "certificacoes": {
-    "titulo": "Certificações e Qualificações",
-    "subtitulo": "Habilitações legais e técnicas para executar qualquer especialidade da sua obra.",
+    "titulo": "Certificações e Formação",
+    "subtitulo": "Equipa com formação técnica especializada nas principais áreas da construção e remodelação — capacitada para executar cada especialidade com o rigor que ela exige.",
     "lista": [
       {
-        "nome": "Alvará de Construção (IMPIC)",
-        "descricao": "Alvará válido emitido pelo IMPIC, com habilitações para construção civil, remodelações, isolamentos, impermeabilizações e especialidades técnicas associadas."
+        "nome": "Aplicação ETICS / Capoto",
+        "icone": "shield",
+        "descricao": "Formação técnica em sistemas de isolamento térmico pelo exterior — preparação de suportes, fixação de placas, armadura e acabamentos finais. Conhecimento atualizado dos sistemas e técnicas que dominam o mercado."
       },
       {
-        "nome": "Seguro de Responsabilidade Civil",
-        "descricao": "Seguro de responsabilidade civil profissional com cobertura total para obras em habitações particulares, prédios e condomínios."
+        "nome": "Construção em Light Steel Frame",
+        "icone": "building",
+        "descricao": "Especialização em construção modular e estruturas em aço leve (LSF) — montagem de perfis, painéis, isolamentos e revestimentos. Domínio de uma técnica moderna, rápida e energeticamente eficiente."
       },
       {
-        "nome": "Segurança e Higiene no Trabalho",
-        "descricao": "Cumprimento integral das normas de SHST em todos os estaleiros — equipamentos, formação e procedimentos atualizados conforme a legislação portuguesa."
+        "nome": "Impermeabilizações e Isolamentos",
+        "icone": "wrench",
+        "descricao": "Formação em diagnóstico de patologias de humidade e na aplicação de membranas, telas, revestimentos líquidos e isolamentos térmicos e acústicos em coberturas, terraços, paredes e pavimentos."
       },
       {
-        "nome": "Equipa Técnica Multidisciplinar",
-        "descricao": "Equipa com formação e certificações em todas as especialidades de obra — aplicação ETICS, isolamentos, eletricidade, canalização, carpintaria e construção em LSF."
+        "nome": "Especialidades Técnicas",
+        "icone": "sparkle",
+        "descricao": "Equipa qualificada nas várias especialidades de obra — eletricidade, canalização, carpintaria e pintura — com formação contínua que permite executar o pacote completo internamente, sem subcontratação."
       }
     ]
   },
